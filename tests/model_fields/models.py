@@ -298,7 +298,7 @@ if Image:
         Model that:
         * Defines two ImageFields
         * Defines the height/width fields before the ImageFields
-        * Has a nullalble ImageField
+        * Has a nullable ImageField
         """
         name = models.CharField(max_length=50)
         mugshot_height = models.PositiveSmallIntegerField()
