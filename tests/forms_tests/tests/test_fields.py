@@ -1114,7 +1114,7 @@ class FieldsTests(SimpleTestCase):
         self.assertEqual(False, f.clean('false'))
         self.assertEqual(False, f.clean('FaLsE'))
 
-    def test_boolean_picklable(self):
+    def test_boolean_pickleable(self):
         self.assertIsInstance(pickle.loads(pickle.dumps(BooleanField())), BooleanField)
 
     def test_booleanfield_changed(self):

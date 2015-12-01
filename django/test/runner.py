@@ -85,7 +85,7 @@ class RemoteTestResult(object):
         return self.testsRun - 1
 
     def check_pickleable(self, test, err):
-        # Ensure that sys.exc_info() tuples are picklable. This displays a
+        # Ensure that sys.exc_info() tuples are pickleable. This displays a
         # clear multiprocessing.pool.RemoteTraceback generated in the child
         # process instead of a multiprocessing.pool.MaybeEncodingError, making
         # the root cause easier to figure out for users who aren't familiar

@@ -469,7 +469,7 @@ class TimeInput(DateTimeBaseInput):
     format_key = 'TIME_INPUT_FORMATS'
 
 
-# Defined at module level so that CheckboxInput is picklable (#17976)
+# Defined at module level so that CheckboxInput is pickleable (#17976)
 def boolean_check(v):
     return not (v is False or v is None or v == '')
 

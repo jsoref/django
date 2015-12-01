@@ -1311,7 +1311,7 @@ don't.
 
     This is a known limitation. It arises from the need to serialize objects
     in order to exchange them between processes. See
-    :ref:`python:pickle-picklable` for details.
+    :ref:`python:pickle-pickleable` for details.
 
 testserver <fixture fixture ...>
 --------------------------------
