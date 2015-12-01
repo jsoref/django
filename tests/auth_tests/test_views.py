@@ -562,7 +562,7 @@ class LoginTest(AuthViewsTestCase):
         for bad_url in ('http://example.com',
                         'http:///example.com',
                         'https://example.com',
-                        'ftp://exampel.com',
+                        'ftp://example.com',
                         '///example.com',
                         '//example.com',
                         'javascript:alert("XSS")'):
@@ -583,7 +583,7 @@ class LoginTest(AuthViewsTestCase):
         # These URLs *should* still pass the security check
         for good_url in ('/view/?param=http://example.com',
                          '/view/?param=https://example.com',
-                         '/view?param=ftp://exampel.com',
+                         '/view?param=ftp://example.com',
                          'view/?param=//example.com',
                          'https://testserver/',
                          'HTTPS://testserver/',
@@ -841,7 +841,7 @@ class LogoutTest(AuthViewsTestCase):
         for bad_url in ('http://example.com',
                         'http:///example.com',
                         'https://example.com',
-                        'ftp://exampel.com',
+                        'ftp://example.com',
                         '///example.com',
                         '//example.com',
                         'javascript:alert("XSS")'):
@@ -860,7 +860,7 @@ class LogoutTest(AuthViewsTestCase):
         # These URLs *should* still pass the security check
         for good_url in ('/view/?param=http://example.com',
                          '/view/?param=https://example.com',
-                         '/view?param=ftp://exampel.com',
+                         '/view?param=ftp://example.com',
                          'view/?param=//example.com',
                          'https://testserver/',
                          'HTTPS://testserver/',
