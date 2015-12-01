@@ -1478,7 +1478,7 @@ class AutodetectorTests(TestCase):
 
     def test_deconstruct_type(self):
         """
-        #22951 -- Uninstanted classes with deconstruct are correctly returned
+        #22951 -- Uninstantiated classes with deconstruct are correctly returned
         by deep_deconstruct during serialization.
         """
         author = ModelState(
