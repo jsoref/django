@@ -1884,7 +1884,7 @@ class Queries6Tests(TestCase):
     def test_tickets_8921_9188(self):
         # Incorrect SQL was being generated for certain types of exclude()
         # queries that crossed multi-valued relations (#8921, #9188 and some
-        # pre-emptively discovered cases).
+        # preemptively discovered cases).
 
         self.assertQuerysetEqual(
             PointerA.objects.filter(connection__pointerb__id=1),
