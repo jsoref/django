@@ -1030,6 +1030,6 @@ class UUIDUserTests(TestCase):
             })
         self.assertRedirects(response, user_change_url)
         row = LogEntry.objects.latest('id')
-        self.assertEqual(row.user_id, 1)  # harcoded in CustomUserAdmin.log_change()
+        self.assertEqual(row.user_id, 1)  # hardcoded in CustomUserAdmin.log_change()
         self.assertEqual(row.object_id, str(u.pk))
         self.assertEqual(row.change_message, 'Changed password.')
