@@ -3104,7 +3104,7 @@ class NullJoinPromotionOrTest(TestCase):
         p1 = Program.objects.create(identifier=i1)
         c1 = Channel.objects.create(identifier=i1)
         p2 = Program.objects.create(identifier=i2)
-        # Test OR + doubleneq. The expected result is that channel is LOUTER
+        # Test OR + doubleneg. The expected result is that channel is LOUTER
         # joined, program INNER joined
         qs1_filter = Identifier.objects.filter(
             Q(program__id=p2.id, channel__id=c1.id)
